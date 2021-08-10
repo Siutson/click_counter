@@ -1,0 +1,50 @@
+body {
+  /*background: linear-gradient(to right, #801f, #0033ff);*/
+  background: linear-gradient(to right, rgb(179, 37, 5), rgb(81, 9, 153));
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  /*background: linear-gradient(to right, black, #000f0a);*/
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.45),
+    rgba(8, 8, 8, 0.75)
+  );
+  margin-top: 90px;
+  height: 500px;
+  width: 450px;
+  border-style: ridge;
+  border-color: black;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-template-rows: repeat(4, 50px);
+  justify-content: center;
+  align-content: center;
+  min-height: 60vh;
+}
+
+.counter-field {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-field {
+  width: auto;
+  height: 30px;
+}
+
+.btns {
+  cursor: pointer;
+  /*height: 50px;*/
+  /*width: 100px;*/
+}
+
+.first-row {
+  grid-column: 1 / -1;
+}
